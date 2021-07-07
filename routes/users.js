@@ -23,7 +23,7 @@ router.get('/votes/:id', async (req, res) => {
     try {
         const user = await User.findById(req.params.id)
         let totalVotes = 0
-        for (commElement of user.comments) {
+        for (let commElement of user.comments) {
             const post = await Post.findById(commElement.postId)
             totalVotes += post.comments[commElement.arrayIn].votes
         }
