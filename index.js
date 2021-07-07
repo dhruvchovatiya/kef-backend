@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/users");
 const postRoute = require("./routes/posts");
-const tagRoute = require("./routes/tags")
+const tagRoute = require("./routes/tags");
 
 dotenv.config();
 
