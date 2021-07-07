@@ -7,7 +7,7 @@ const TagsCnt = require("../models/TagsCnt");
 //get all tags
 router.get('/', async (req, res) => {
     try {
-        const tags = await Tags.findById('60e4ed402df6b7d4eb78d93e')
+        const tags = await Tags.findById('60e52168d2ba63b740fd0e85')
         res.status(200).json(tags)
     } catch (err) {
         res.status(500).json(err)
